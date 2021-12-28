@@ -1,6 +1,7 @@
 import sys
 import re
-filename = f"G:\gam3a\System Programming\Lab\\absolute loader\\hte_2.txt"
+import numpy as np
+filename = f"G:\gam3a\System Programming\Lab\\absolute loader\\hte_4.txt"
 array = []
 start_ = 0
 xline = ""
@@ -64,7 +65,11 @@ for i in range(0, array[0].__len__()):#put the memoryaddress(start_) to array
 for i in range(0, real_array.__len__()):#print ALL
     print(real_array[i])
 
-
+file1 = open("MyFile.txt","a")
+for ex in real_array:
+    
+    file1.write(str(ex))
+file1.close()
 
 
 #coded with 💖 by marwaneldesouki
